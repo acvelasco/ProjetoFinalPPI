@@ -1,0 +1,32 @@
+{
+  "name": "projetofinalppi",
+  "version": "1.0.0",
+  "description": "Projeto Final de website com bate papo.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acvelasco/ProjetoFinalPPI.git"
+  },
+  "keywords": [
+    "HTTP",
+    "POST",
+    "Validação",
+    "Servidor"
+  ],
+  "author": "Any Carolina Carvalho Velasco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/acvelasco/ProjetoFinalPPI/issues"
+  },
+  "homepage": "https://github.com/acvelasco/ProjetoFinalPPI#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}
