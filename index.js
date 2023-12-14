@@ -226,28 +226,28 @@ function processarCadastroUsuario(requisicao, resposta){
                     </div>`
 
                     for(const usuario of listaUsuarios){
-                        conteudoResposta += <option value="${usuario.nome}">${usuario.nome}</option>;
+                        conteudoResposta += `<option value="${usuario.nome}">${usuario.nome}</option>`;
                     }
                     conteudoResposta+=`
                         </select>
-                        ${!users.name ? <p class="text-danger">Por favor, informe um usuário válido!</p> : ''}
+                        ${!users.name ? `<p class="text-danger">Por favor, informe um usuário válido!</p>` : ''}
                         </div></div><br/>`;
 
                     conteudoResposta+=`
                         <div class="col-md-6">
                         <div class="mb-3">
                             <label for="mensagem" class="form-label">Mensagem</label><br/>
-                            <textarea class="form-control" id="mensagem" name="mensagem" style="width: 450px;" cols="20" placeholder="Escreva aqui sua mensagem ao usuário selecionado" required></textarea>
-                            ${!users.mensagem ? <p class="text-danger">Por favor, informe uma mensagem ao usuário</p> : ''}
+                            <input type="text" class="form-control" id="mensagem" name="mensagem" style="width: 100%;" required>
+                            ${!users.mensagem ? `<p class="text-danger">Por favor, informe uma mensagem ao usuário</p>` : ''}
                             </div> 
-                            <div>
+                            </div> 
+
                             <div class="col-12 mt-4">
-                    <button class="btn btn-success" id="autoSubmit">Enviar</button>
-                    </div>
-                    </fieldset>
-                </form>
-                </div>
-                </div>
+                            <button class="btn btn-success" id="autoSubmit">Enviar</button>
+                            </div>
+                    </form>
+            </div>
+                
             <!--<script>
         window.onload = function() {
         document.getElementById('autoSubmit').click();
